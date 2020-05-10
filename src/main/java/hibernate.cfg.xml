@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+                                         "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+	<session-factory name="sessionFactory">
+		<property name="hibernate.connection.driver_class">org.postgresql.Driver</property>
+		<property name="hibernate.connection.url">jdbc:postgresql://localhost/classManager</property>
+		<property name="hibernate.connection.username">postgres</property>
+		<property name="hibernate.connection.password">995943</property>
+		<property name="hibernate.hbm2ddl.auto">update</property>
+		<property name="hibernate.dialect">org.hibernate.dialect.PostgreSQLDialect</property>
+		<property name="hibernate.show_sql">true</property>
+
+		<mapping class="com.my.spring.pojo.Class" />
+		<mapping class="com.my.spring.pojo.Discipline" />
+		<mapping class="com.my.spring.pojo.Event" />
+		<mapping class="com.my.spring.pojo.Matter" />
+		<mapping class="com.my.spring.pojo.Student" />
+		<mapping class="com.my.spring.pojo.Teacher" />
+		<mapping class="com.my.spring.pojo.ClassStudent" />
+	</session-factory>
+</hibernate-configuration>
